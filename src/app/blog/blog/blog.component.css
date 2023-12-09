@@ -1,0 +1,53 @@
+.title {
+  color: var(--color-8);
+}
+
+.title::after,
+.title::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-3);
+  position: absolute;
+  bottom: -1rem;
+
+  animation: grow-line 3s linear infinite;
+}
+
+.title::before {
+  left: 50%;
+}
+
+.title::after {
+  right: 50%;
+}
+
+.section-description {
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: outside;
+
+  margin-top: 1.5rem;
+}
+.sub-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-width: fit-content;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+@keyframes grow-line {
+  0% {
+    width: 50;
+  }
+  50% {
+    width: 25%;
+  }
+  100% {
+    width: 0;
+  }
+}

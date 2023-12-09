@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #fff0f3;
+  --color-2: #ffccd5;
+  --color-3: #ffb3c1;
+  --color-4: #ff8fa3;
+  --color-5: #ff4d6d;
+  --color-6: #c9184a;
+  --color-7: #a4133c;
+  --color-8: #800f2f;
+  --color-8: #590d22;
+}
+body {
+  margin: 0;
+  padding: 0;
+}

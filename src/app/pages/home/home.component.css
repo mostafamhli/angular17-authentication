@@ -1,0 +1,25 @@
+.main-container {
+  height: 85vh;
+  max-height: 90vh;
+}
+.first-container {
+  min-height: 100%;
+}
+
+.title {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

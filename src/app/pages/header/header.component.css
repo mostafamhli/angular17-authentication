@@ -1,0 +1,55 @@
+.main-title {
+  color: var(--color-1);
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.item {
+  color: var(--color-1);
+  position: relative;
+}
+
+.item.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-2);
+  bottom: -14px;
+  left: 0;
+}
+
+.header-container {
+  background-color: var(--color-8);
+  color: var(--color-1);
+}
+
+.login,
+.register {
+  color: var(--color-1);
+}
+.login {
+  background-color: var(--color-7);
+}
+
+.register {
+  background-color: var(--color-7);
+}
+
+.login:hover {
+  background-color: var(--color-5);
+}
+
+.register:hover {
+  background-color: var(--color-5);
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    margin-bottom: 1rem;
+  }
+
+  .item.active::after {
+    bottom: -4px;
+  }
+}
